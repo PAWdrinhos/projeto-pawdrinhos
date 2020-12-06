@@ -1,0 +1,33 @@
+{%extends './base.html'%}
+{%load static%}
+{%block title%}Meu perfil{%endblock%}
+{%block content%}
+        <div class="profile-info">
+            <img class="profile-pic" src="{%static '/img/avatar.png'%}" title="foto-perfil">
+            <h1>{{user.name}}</h1>
+            <h2>{{user.city}}, {{user.state}} - {{user.cep}}</h2>
+            <h3>APADRINHADOS POR VOCÊ!</h3>
+            <img class="apadrinhados" src="{%static '/img/apadrinhados.png'%}" title="apadrinhados">
+        </div>
+
+        <div class="container">
+            {%if animais.count == 0 %}
+
+            <div class="box">
+                    <h1>Nenhum animal apadrinhado</h1>
+            </div>
+    
+            {%else%}
+                {%for animal in animais%}
+            <div class="box">
+                <img class="profile-pic" src="{%static '/img/1.png'%}" title="animal">
+                <div class="info">
+                    <h1>{{animal.nome}}</h1>
+                    <h2><a target="blank" href="/ong/{{animal.ong.id}}">{{animal.ong.name}}</a></h2> 
+                    <h3>{{animal.desc}}</h3>
+                </div>
+            </div>
+                {%endfor%}
+            {%endif%}
+        </div> 
+{%endblock%}

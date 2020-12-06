@@ -1,0 +1,38 @@
+{%extends './base.html'%}
+{%load static%}
+
+{%block title%}Perfil do padrinho{%endblock%}
+
+{%block content%}
+        <div class="profile-info">
+            <img class="profile-pic" src="{%static 'img/avatar.png'%}" title="foto-perfil">
+            <h1>{{padrinho.name}}</h1>
+            <h2>{{padrinho.city}}, {{padrinho.state}} - {{padrinho.cep}}</h2>
+            <h3>APADRINHADOS</h3>
+            <img class="apadrinhados" src="{%static 'img/apadrinhados.png' %}" title="apadrinhados">
+        </div>
+
+        <div class="container">
+            {%if animais.count == 0 %}
+
+            <div class="box">
+                    <h1>Nenhum animal apadrinhado</h1>
+            </div>
+    
+            {%else%}
+            
+                {%for animal in animais%}
+                <div class="box">
+                    <img class="profile-pic" src="{% static '/img/' %}{{animal.classe}}.png" title="animal">
+                    <div class="info">
+                        <h1>{{animal.nome}}</h1>
+                        <h2>{{animal.ong.name}}</h2> 
+                        <h3>{{animal.desc}}</h3>
+                    </div>
+                </div>
+                {%endfor%}
+            </div> 
+            {%endif%}
+        </div>
+
+        {%endblock%}

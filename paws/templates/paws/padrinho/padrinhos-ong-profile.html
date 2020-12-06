@@ -1,0 +1,48 @@
+{%extends './base.html'%}
+{%load static%}
+
+{%block title%}Ver ONG{%endblock%}
+
+{%block content%}
+        <div class="profile-info">
+            <img class="profile-pic" src="{%static 'img/ong_icon.png'%}" title="ong">
+            <h1>{{ong.name}}</h1>
+            <h2>{{ong.city}}, {{ong.state}} - {{ong.cep}}</h2>
+        </div>
+    <div class="container">
+
+        {%if animais.count == 0 %}
+
+            <div class="box">
+                    <h1>Nenhum animal disponível para apadrinhar</h1>
+            </div>
+    
+            {%else%}
+                {%for animal in animais%}
+            <div class="box">
+                <img class="profile-pic" src="{%static 'img/'%}{{animal.classe}}.png" title="animal">
+                <div class="info">
+                    <h1>{{animal.nome}}</h1>
+                    <h2>{{animal.ong.name}}</h2> 
+                    <h3>{{animal.desc}}</h3>
+                </div>
+                <button class="sponsor-button" onclick="confirm_sponsor('{{animal.id}}')">
+                    <img class="sponsor" src="{%static 'img/sponsor.png'%}" title="apadrinhar">
+                    <p>APADRINHAR</p>
+                </button>
+            </div>
+
+            <div class="container-confirm">
+                <div id="{{animal.id}}" style="display:none;">
+                    <button class="confirm-button">
+                        <a href="../apadrinhar/{{animal.id}}">
+                            <img class="sponsor" src="{%static 'img/sponsor.png'%}" title="apadrinhar">
+                            <p>CONFIRMAR</p>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        {%endfor%} 
+        {%endif%}
+    </div>
+{%endblock%}

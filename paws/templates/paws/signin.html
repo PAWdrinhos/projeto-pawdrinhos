@@ -1,0 +1,42 @@
+{%extends 'default.html'%}
+{%load static%}
+
+{%block title%}Pawdrinhos - Entrar{%endblock%}
+
+{%block content%}
+        <!--columns in the right corner of the page-->
+        <column-purple></column-purple>
+        <column-blue></column-blue>
+        <column-yellow></column-yellow>
+
+        <img class="catcomp" src="{% static '/img/cat.png' %}" title="catcomputer">
+
+        <!--page's logo-->
+        <a><img class="logo" src="{% static '/img/paw-print.png' %}" title="pawdrinhos"></a>
+
+        <!--box where the content goes-->
+        <div class="box-signin">
+            <p class="toptext">BEM-VINDA(O) DE VOLTA!</p>
+            <img class="pig" src="{% static '/img/pig.png' %}" title="pig">
+                
+            <!--dimensions for the content-->
+            <form method="POST" action="/signin/" class="signin">
+                {%csrf_token%}
+                
+                {{form.email}}
+               
+
+                {{form.password}}
+                {{form.password.errors}}
+                <input class="button" id="btn_signup" type="submit" value="Entrar">
+            <!--in case it dosn't have an account-->
+            <div class="loginregister">
+                <p>Não possui uma conta?</p>&nbsp;&nbsp;
+                <a href="/signup/">Cadastre-se!</a>
+            </div>
+
+        </form>
+        </div>
+        
+
+        {%endblock%}

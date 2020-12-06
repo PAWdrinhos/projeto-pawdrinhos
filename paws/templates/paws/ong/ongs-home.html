@@ -1,0 +1,64 @@
+{%extends './base.html'%}
+{%load static%}
+{%block title%}Página Inicial{%endblock%}
+
+{%block content%}
+
+        
+<vertical>
+    <img class="animais" src="{% static '/img/animais.png'%}"title="animais">
+    <ani>ANIMAIS</ani>
+    <img class="cadastro" src="{% static '/img/cad.png' %}" title="cadastro">
+    <cad>CADASTRAR ANIMAL</cad>
+</vertical>
+
+
+        <div class="container2">
+            
+            <div class="halfbox">
+                <div class="column">
+            {%if animais.count == 0 %}
+                    <div class="pet-box">
+                    <h2>Nenhum Animal cadastrado</h2>
+                </div>
+            {%else%}
+                {%for animal in animais%}   
+                
+                    <div class="pet-box">
+                        <img class="profile-pic" src="{% static '/img/' %}{{animal.classe}}.png" title="animal">
+                        <div class="info">
+                            <h1>{{animal.nome}}</h1>
+                            <h2>{{animal.ong.name}}</h2>
+                            <h3>{{animal.desc}}</h3>
+                            
+                        </div>
+                    </div>
+                {%endfor%}
+            {%endif%}
+            </div>
+            </div>
+
+            <div class="halfbox">
+                <div class="column" style="overflow:hidden;">
+                    <div class="formulario">
+                        <p>CADASTRAR NOVO ANIMAL</p>
+                        <div class="reg-animal">
+                            <img class="paw-heart" src="{% static '/img/paw-heart.png'%}" title="coracao">
+                        </div>
+                        <form id="form" method="post">
+                            {%csrf_token%}
+                            {{form.nome}}
+                            {{form.nome.errors}}
+
+                            {{form.desc}}
+                            {{form.errors.desc}}
+
+                            {{form.classe}}
+                            <input type="submit" value="CADASTRAR">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        {%endblock%}

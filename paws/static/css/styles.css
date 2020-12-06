@@ -1,0 +1,493 @@
+html, body {
+    overflow: hidden;
+    background: ivory;
+}
+
+elipse-purple {
+    border-radius: 50%;
+    position: fixed;
+    width: 466px;
+    height: 466px;
+    left: 1140px;
+    top: -200px;
+
+    background: #E8AFE5;
+    opacity: 0.8;
+}
+
+elipse-pink {
+    border-radius: 50%;
+    position: fixed;
+    width: 466px;
+    height: 466px;
+    left: 910px;
+    top: 432px;
+
+    background: #FCDFD6;
+    opacity: 0.8;
+}
+
+elipse-orange {
+    border-radius: 50%;
+    position: fixed;
+    width: 466px;
+    height: 466px;
+    left: 1193px;
+    top: 431px;
+
+    background: #FFEDBF;
+    opacity: 0.8;
+}
+
+elipse-yellow {
+    border-radius: 50%;
+    position: fixed;
+    width: 466px;
+    height: 466px;
+    left: 1193px;
+    top: 88px;
+
+    background: #FDFF97;
+    opacity: 0.8;
+}
+
+elipse-green {
+    border-radius: 50%;
+    position: fixed;
+    width: 466px;
+    height: 466px;
+    left: 910px;
+    top: 7px;
+    
+    background: #D6FCDA;
+    opacity: 0.8;
+}
+
+elipse-blue {
+    border-radius: 50%;
+    position: fixed;
+    width: 466px;
+    height: 466px;
+    left: 760px;
+    top: 169px;
+
+    background: #D9ECFD;
+    opacity: 0.8;
+}
+
+column-purple {
+    position: fixed;
+    width: 100px;
+    height: 1400px;
+    left: 1435px;
+
+    background: #E8AFE5;
+    opacity: 0.6;
+}
+
+column-blue {
+    position: fixed;
+    width: 100px;
+    height: 1400px;
+    left: 1345px;
+    
+    background: #D9ECFD;
+    opacity: 0.6;
+}
+
+column-yellow {
+    position: fixed;
+    width: 100px;
+    height: 1400px;
+    left: 1255px;
+    
+    background: #FDFF97;
+    opacity: 0.6;
+}
+
+/*sign up's background image*/
+.toystory {
+    background-image: url(../img/toystory.png);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 24%;
+}
+
+/*icons*/
+.logo {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    left: 80px;
+    top: 55px;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.pethouse {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    left: 230px;
+    top: 150px;
+}
+
+.catcomp {
+    position: fixed;
+    width: 500;
+    height: 500;
+    right: 1084px;
+    top: 310px;
+    opacity: 200%;
+}
+
+.pig {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    left: 695px;
+    top: 550px;
+}
+
+.bunny {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    left: 230px;
+    top: 500px;
+}
+
+/*texts*/
+.text h1 {
+    position: fixed;
+    left: 130px;
+    top: 60px;
+
+    font-family: 'bangers';
+    font-size: 30px;
+    font-style: bold;
+    color: #E894E4;
+    text-shadow: 2px 2px 2px black;
+    opacity: 10;
+}
+
+.text h4 {
+    position: fixed;
+    left: 50px;
+    right: 765px;
+    top: 480px;
+    line-height: 2;
+
+    font-family: 'open sans';
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 10px #E894E4;
+    opacity: 80%;
+}
+
+.text h5 {
+    position: fixed;
+    left: 685px;
+    top: 700px;
+
+    font-family: 'open sans';
+    font-size: 10px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #E894E4;
+}
+
+/*options access*/
+.options {
+    position: fixed;
+    left: 1300px;
+    top: 260px;
+    font-family: "pathway gothic one";
+    font-size: 20px;
+}
+
+.options p {
+    opacity: 80%;
+    transform: scale(1.0);
+}
+
+.options p:hover {
+    opacity: 100%;
+    transform: scale (1.2);
+    font-size: 22px;
+}
+
+.options p a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 0.5px solid #E894E4;
+}
+
+/*text at the top of the sign in & sign up boxes*/
+.toptext {
+    font-family: 'pathway gothic one';
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+    text-shadow: 2px 2px 20px #F5CEC2;
+}
+
+/*sign in & sign up button*/
+.button { 
+    width: 150px;
+    height: 30px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 18px;
+    background-color: #E8AFE5;
+    opacity: 80%;
+    outline: none;
+}
+
+button:hover {
+    opacity: 100%;
+}
+
+/*postion for sign up button*/
+.button-position {
+    margin-left: 150px;
+}
+
+
+/*input box for sign in & sign up*/
+input:not([type="submit"]), select {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    margin-bottom: 5px;
+    display: flex;
+    
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
+    outline-color: #E8AFE5;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    opacity: 60%;
+}
+
+/*sign in box*/
+.box-signin {
+    margin-top: 120px;
+    margin-left: 560px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+    
+    background: rgba(214, 252, 218, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+}
+
+.box-signin .signin {
+    width: 250px;
+    height: 150px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* in case it doesn't have an accont*/
+.loginregister {
+    padding: 15px;
+    font-size: 15px;
+    display: flex;
+}
+
+.loginregister a {
+    text-decoration: none;
+    font-family: 'pathway gothic one', sans-serif;
+    color: #E894E4;
+    font-size: 15px;
+}
+
+.loginregister a:hover {
+    border-bottom: 1px solid #F5CEC2;
+}
+
+/*sign up box*/
+.box-signup {
+    margin-top: 120px;
+    margin-left: 285px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 900px;
+    height: 400px;
+    border-radius: 10px;
+    
+    background: rgba(252, 223, 214, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+}
+
+.box-signup .signup {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.signup-column {
+    margin-top: 0px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.space-names {
+    font-size: 18px;
+    width: 120px;
+    height: 290px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.space {
+    width: 200px;
+    height: 290px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*bottom content part*/
+.typeofacc {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 18px;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typeofacc .opt {
+    margin-left: 5px;
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/*radio button container*/
+.container {
+    width: 80px;
+    position: relative;
+    padding-left: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*radio button's label*/
+.choices_label {
+    margin-right: 20px;
+}
+
+/*hiding the browser's default radio button*/
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+/*creating a customized radio button*/
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #E894E4;
+}
+  
+/*radio button's dot (hidden when not checked)*/
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/*dot when checked*/
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/*dot style*/
+.container .checkmark:after {
+    top: 4.5px;
+    left: 4.3px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+}
+
+.errorlist{
+    padding: 0;
+    margin-top: -28px;
+    margin-bottom: -20px;
+}
+
+.errorlist li{
+    font-size: .7em;
+    font-weight: 150;
+    color: crimson;
+    padding: 0;
+}
+

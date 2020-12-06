@@ -1,0 +1,40 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static '/css/reset.css' %}">
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+
+        <!--title's name & icon-->
+        <link rel="icon" href="{% static '/img/paw-print.ico' %}">
+        <title>{%block title%}{%endblock%}</title>
+
+        <!--fonts used in css-->
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dosis:wght@300;700&family=Open+Sans:ital,wght@0,300;1,300&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        {%block content%}
+        {%endblock%}
+
+        <div class="text">
+            <!--project's name-->
+            <h1>PAWdrinhos</h1>
+            
+            {%block text%}{%endblock%}
+
+            <!--credits-->
+            <h5>Design © Isabela Gabriely</h5>
+        </div>
+
+        <!--access to other pages-->
+        <div class="options">
+            <p><a href="/">INÍCIO</a></p><br><br>
+            <p><a href="/signin/">ENTRAR</a></p><br><br>
+            <p><a href="/signup/">CADASTRAR-SE</a></p><br><br>
+        </div>
+    </body>
+</html>

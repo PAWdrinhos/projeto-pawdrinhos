@@ -1,0 +1,53 @@
+{%load static%}
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static '/css/reset.css'%}">
+        <link rel="stylesheet" href="{% static '/css/profiles/style.css' %}">
+
+        <!--icone-->
+        <link rel="icon" href="{%static '/img/paw-print.ico' %}">
+
+        <!--limite de 15 caracteres para o nome-->
+        <title>Pawdrinhos - {%block title%}{%endblock%}</title>
+
+        <!--fontes do css-->
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dosis:wght@300;700&family=Open+Sans:ital,wght@0,300;1,300&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <img class="bg" src="{%static '/img/bg.png' %}">
+
+        <img class="logo" src="{%static '/img/paw-print.png' %}" title="pawdrinhos">
+
+        <div id="profile-settings" style="display:none;">
+            <div class="options">
+                <p>
+                    <a href="{{BASE_DIR}}/ong/profile/">VER PERFIL</a>
+                </p>
+                <p>
+                    <a href="{{BASE_DIR}}/logout">SAIR</a>
+                </p>
+            </div>
+        </div>
+
+        <button class="profile" onclick="profile_settings('profile-settings')">
+            <img class="avatar" src="{%static '/img/avatar_ong.png' %}" title="perfil">
+        </button>
+
+        <div class="text">
+            <h1>PAWdrinhos</h1>
+            <h5>Design © Isabela Gabriely</h5>
+        </div>
+
+
+                {%block content%}
+                
+                {%endblock%}
+
+
+        <script type="text/javascript" src="{% static '/js/script.js'%}"></script>
+    </body>
+</html>

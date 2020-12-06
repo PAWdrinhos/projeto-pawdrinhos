@@ -1,0 +1,35 @@
+{%extends './base.html'%}
+{%load static%}
+
+{%block title%}Página Inicial{%endblock%}
+        
+{%block content%}
+<vertical>
+    <img class="ongs" src="{%static '/img/ongs.png' %}" title="ongs">
+    <ong>ORGANIZAÇÕES</ong>
+</vertical>
+
+    <div class="container">
+            {%if ongs.count == 0 %}
+
+            <div class="box-button">
+                    <h1>Nenhuma ONG foi encontrada</h1>
+            </div>
+    
+            {%else%}
+                {% for ong in ongs %}
+                    <div class="box-button">
+                        <a target="blank" title="Clique para ver a ONG" href="ong/{{ong.id}}">
+                        <img class="profile-pic" src="{% static '/img/ong_icon.png'%}" title="ong">
+                        <div class="info">
+                            <h1>{{ong.name}}</h1>
+                            <h2>{{ong.city}}, {{ong.state}}, {{ong.cep}}</h2> 
+                            <h3>{{ong.email}}</h3>
+                        </div>
+                        </a>
+                    </div>
+                {%endfor%}
+            {%endif%}
+
+    </div>
+ {%endblock%}

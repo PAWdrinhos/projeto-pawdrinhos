@@ -1,0 +1,24 @@
+{%extends 'default.html'%}
+{%load static %}
+{%block title%}Pawdrinhos - Home{%endblock%}
+
+{%block content%}
+<!--elipses in the right corner of the page-->
+<elipse-purple></elipse-purple>
+<elipse-yellow></elipse-yellow>
+<elipse-green></elipse-green>
+<elipse-blue></elipse-blue>
+<elipse-orange></elipse-orange>
+<elipse-pink></elipse-pink>
+    
+<img class="pethouse" src="{% static '/img/pet-house.png' %}" title="pethouse">
+
+<!--page's logo-->
+<a href="/"><img class="logo" src="{% static '/img/paw-print.png' %}" title="pawdrinhos"></a>
+    
+    <!--credits-->
+{%endblock%}
+
+
+     <!--project description-->
+     {%block text%}<h4>PAWdrinhos é um projeto voltado a ONGs que resgatam animais em situações de abandono e maus tratos. Nossa ideia foi produzir um trabalho que pudesse de alguma forma facilitar o interesse das pessoas a ajudarem. Com isto, planejamos uma aplicação que conecta estes animaizinhos que vivem em ONGs e pessoas dispostas a apadrinhá-los, assim, contribuindo com as despezas e participando de uma ação social incrível. Se você é voluntário em uma ONG, cadastre-a e encontrem padrinhos para os seus animaizinhos. Caso contrário, apadrinhe um bichinho!</h4>{%endblock%}

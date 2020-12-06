@@ -1,0 +1,619 @@
+html, body {
+    overflow: hidden;
+    background: #FCDFD6;
+}
+
+.bg {
+    position: fixed;
+    margin-top: -10%;
+    margin-left: -5%;
+    width: 350vh;
+    height: 150vh;
+}
+
+vertical {
+    position: fixed;
+    width: 100%;
+    height: 12vh;
+    top: 15vh;
+}
+
+vertical ani {
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 22%;
+    font-family: 'pathway gothic one';
+    font-size: 3.2vh;
+    color: black;
+}
+
+vertical ong {
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 48%;
+    font-family: 'pathway gothic one';
+    font-size: 3.5vh;
+    color: black;
+}
+
+vertical cad {
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 72%;
+    font-family: 'pathway gothic one';
+    font-size: 3.2vh;
+    color: black;
+}
+
+.logo {
+    position: fixed;
+    margin-top: 2.5%;
+    margin-left: 6%;
+    width: 5vh;
+    height: 5vh;
+    filter: drop-shadow(0.4vh 0.4vh 0.4vh black);
+}
+
+.ongs {
+    position: fixed;
+    width: 9vh;
+    height: 9vh;
+    margin-top: 0.5%;
+    margin-left: 40%;
+}
+
+.apadrinhados {
+    position: fixed;
+    width: 9vh;
+    height: 9vh;
+    margin-top: -3%;
+    margin-left: 36%;
+}
+
+.animais {
+    position: fixed;
+    width: 9vh;
+    height: 9vh;
+    margin-top: 0.5%;
+    margin-left: 16%;
+}
+
+.cadastro {
+    position: fixed;
+    width: 9vh;
+    height: 9vh;
+    margin-top: 0.6%;
+    margin-left: 66%;
+}
+
+.avatar {
+    position: fixed;
+    width: 9vh;
+    height: 9vh;
+    left: 93%;
+    top: 3%;
+}
+
+.profile-pic {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 9vh;
+    height: 9vh;
+}
+
+.profile {
+    position: fixed;
+    width: 11vh;
+    height: 11vh;
+    top: 2.15%;
+    left: 92.5%;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.055);
+}
+
+.profile:hover {
+    position: fixed;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #E894E4;
+}
+
+#profile-settings {
+    margin-top: 0.7%;
+    margin-left: 79%;
+    width: 40vh;
+    height: 12.4vh;
+    position: fixed;
+    border-radius: 6vh;
+
+    background: rgba(0,0,0,0.055);
+}
+
+#profile-settings .options {
+    margin-top: 0.7%;
+    margin-left: 5%;
+    width: 25vh;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-settings .options p {
+    padding-right: 5%;
+    margin-top: 18%;
+    margin-left: 10%;
+    font-family: 'pathway gothic one';
+    font-size: 2.5vh;
+}
+
+#profile-settings .options p:hover {
+    font-size: 2.8vh;
+}
+
+#profile-settings .options p a {
+    color:black;
+    text-decoration: none;
+    border-bottom: 0.5vh solid #E894E4;
+}
+
+/* texts */
+
+.text h1 {
+    position: fixed;
+    top: 6%;
+    left: 10%;
+
+    font-family: 'bangers';
+    font-size: 4vh;
+    font-style: bold;
+    color: #E894E4;
+    text-shadow: 0.3vh 0.3vh 0.3vh black;
+}
+
+.text h5 {
+    position: fixed;
+    left: 45%;
+    top: 94%;
+
+    font-family: 'open sans';
+    font-size: 1.5vh;
+    font-style: italic;
+    text-shadow: 0.5vh 0.5vh 0.5vh #E894E4;
+}
+
+::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0.055);
+}
+
+::-webkit-scrollbar-button {
+    background: rgba(214,252,218,0.6);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E894E4;
+}
+
+.profile-info {
+    position: fixed;
+    width: 80%;
+    height: 4vh;
+    padding: 2%;
+    top: 15vh;
+    font-family: 'pathway gothic one';
+}
+
+.profile-info .profile-pic {
+    position: fixed;
+    margin-top: -1.5%;
+    margin-left: 10%;
+}
+
+.profile-info h1 {
+    margin-top: -1%;
+    margin-left: 20%;
+    padding-bottom: 0.5%;
+    font-size: 3.5vh;
+}
+
+.profile-info h2 {
+    margin-left: 20%;
+    font-size: 2.5vh;
+}
+
+.profile-info h3 {
+    margin-top: -3%;
+    margin-left: 54%;
+    font-family: 'pathway gothic one';
+    font-size: 3.5vh;
+    color: black;
+}
+
+.container {
+    position: fixed;
+    margin-top: 13.3%;
+    width: 100%;
+    height: 65vh;
+    overflow: auto;
+    overflow-x: hidden;
+    
+    display: list-item;
+    
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 4vh;
+    color: black;
+    background: rgba(0,0,0,0.099);
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+}
+
+.container a:hover {
+    border-bottom: 0.5vh solid #E894E4;
+}
+
+.box {
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-bottom: -1.2%;
+    width: 80vh;
+    height: 30vh;
+    border-radius: 4vh;
+    
+    display: flex;
+    background: rgba(0, 0, 0, 0.055);
+}
+
+.box .info {
+    position: flex;
+    margin-top: 3%;
+    margin-left: 5%;
+
+    font-family: 'pathway gothic one', sans-serif;
+    color: black;
+}
+
+.box .info h1 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.box .info h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 2.5vh;
+}
+
+.box .info h3 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    max-width: 40ch;
+    font-size: 2.5vh;
+}
+
+.box-button {
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-bottom: -1.2%;
+    width: 80vh;
+    height: 30vh;
+    border-radius: 4vh;
+    outline: none;
+    border: none;
+    
+    display: flex;
+    background: rgba(0,0,0, 0.055);
+}
+
+.box-button a {
+    text-decoration: none;
+    width: 80vh;
+    height: 30vh;
+    border-radius: 4vh;
+    
+    display: flex;
+}
+
+.box-button:hover {
+    box-shadow: 0 0 5pt 4pt #E894E4;
+}
+
+
+.container2 {
+    position: fixed;
+    margin-top: 9.79%;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 4vh;
+    color: black;
+}
+
+.container2 .halfbox {
+    margin-top: 3.2%;
+    width: 100%;
+    height: 65vh;
+}
+
+.halfbox .column {
+    width: 100%;
+    height: 100%;
+    display: list-item;
+    overflow: auto;
+    overflow-x: hidden;
+    background:rgba(0, 0, 0, 0.055);
+}
+
+.pet-box {
+    margin-top: 2%;
+    margin-left: 14%;
+    width: 70vh;
+    height: 30vh;
+    border-radius: 5vh;
+    
+    display: flex;
+    background: rgba(0, 0, 0, 0.055);
+}
+
+.pet-box .info {
+    position: flex;
+    margin-top: 4%;
+    margin-left: 4%;
+
+    font-family: 'pathway gothic one', sans-serif;
+    color: black;
+}
+
+.pet-box .info h1 {
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.pet-box .info h2 {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-size: 2.5vh;
+}
+
+.pet-.info .info h2 a {
+    background: transparent;
+    text-decoration: none;
+    color: black;
+}
+
+.pet-box .info h2 a:hover {
+    border-bottom: 0.5vh solid #E894E4;
+}
+
+.pet-box .info h3 {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    max-width: 40ch;
+    font-size: 2.5vh;
+}
+
+a .info {
+    position: flex;
+    margin-top: 3%;
+    margin-left: 5%;
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 4vh;
+    color: black;
+    text-align: left;
+}
+
+a .info h1 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+a .info h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 2.5vh;
+}
+
+a .info h3 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    max-width: 40ch;
+    font-size: 2.5vh;
+    line-height: 2.5vh;
+}
+
+.sponsor-button {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 1%;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 2vh;
+    
+    background: rgba(232, 175, 299, 0.6);
+    box-shadow: 0.5vh 0.5vh 0.5vh black;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sponsor-button:hover {
+    background: #D6FCDA;
+}
+
+.sponsor-button .sponsor {
+    position: absolute;
+    margin-left: 30%;
+    width: 3vh;
+    height: 3vh;
+}
+
+.sponsor-button p {
+    margin-left: -16%;
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 2.5vh;
+    color: black;
+}
+
+.container-confirm {
+    margin-top: -8%;
+    margin-bottom: 4.84%;
+    margin-left: 61.2%;
+    width: 15vh;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.confirm-button {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 2vh;
+    
+    background: rgba(232, 175, 299, 0.6);
+    box-shadow: 0.5vh 0.5vh 0.5vh black;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background: #D6FCDA;
+}
+
+.confirm-button .sponsor {
+    position: absolute;
+    margin-left: 30%;
+    width: 3vh;
+    height: 3vh;
+}
+
+.confirm-button p {
+    margin-left: -16%;
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 2.5vh;
+    color: black;
+}
+
+.confirm-button a {
+    text-decoration: none;
+}
+
+.formulario {
+    margin-top: 2%;
+    margin-left: 17%;
+    width: 70vh;
+    height: 55vh;
+    border-radius: 6vh;
+    background: #D9ECFD;
+}
+
+.formulario p {
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 11.5%;
+    font-family: 'pathway gothic one';
+    font-size: 3vh;
+    color: black;
+}
+
+.formulario .reg-animal {
+    position: fixed;
+    margin-top: -0.3%;
+    margin-left: 29%;
+    width: 9vh;
+    height: 9vh;
+    border-radius: 50%;
+
+    background: #E8AFE5;
+    outline: none;
+    border: none;
+    box-shadow: 0.5vh 0.5vh 0.5vh black;
+}
+
+.paw-heart {
+    position: fixed;
+    margin-top: 0.7%;
+    margin-left: 0.3%;
+    width: 8vh;
+    height: 8vh;
+}
+
+
+form input, select {
+    margin-top: 3%;
+    margin-left: 17%;
+    width: 45vh;
+    height: 7vh;
+
+    border: none;
+    outline-color: #E8AFE5;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 2.5vh;
+    color:rgba(0, 0, 0, 0.6);
+
+}
+
+input[name="nome"] {
+    margin-top: 15%;
+}
+
+textarea {
+    margin-top: 3%;
+    margin-left: 17%;
+    width: 45vh;
+    height: 15vh;
+    resize: none;
+
+    border: none;
+    outline-color: #E8AFE5;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 2.5vh;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+form input:focus {
+    box-shadow: 0 0 7pt 6pt #E894E4;
+}
+
+form textarea:focus {
+    box-shadow: 0 0 7pt 6pt #E894E4;
+}
+
+input[type=submit] {
+    margin-top: 3%;
+    margin-left: 32%;
+    width: 25vh;
+    height: 5vh;
+    border-radius: 6vh;
+
+    background: #E8AFE5;
+    color: black;
+    box-shadow: 0.4vh 0.5vh 0.5vh black;
+    
+    text-decoration: none;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: #FFEDBF;
+}

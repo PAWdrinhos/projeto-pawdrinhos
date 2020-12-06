@@ -1,0 +1,449 @@
+html, body {
+    overflow: hidden;
+}
+
+vertical {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 90px;
+    background-image: linear-gradient(rgba(252,223,214,0.6), rgba(255,237,191,0.6), rgba(214,252,218,0.6), rgba(217,236,253,0.6), rgba(232,175,229,0.6));
+}
+
+/*icons*/
+.logo {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    left: 80px;
+    top: 30px;
+    filter: drop-shadow(2px 2px 2px black);
+    
+}
+
+.avatar {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    left: 1430px;
+    top: 10px;
+}
+
+.profile {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    left: 1430px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    outline: none;
+    
+}
+
+.profile:hover {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    top: 5px;
+    left: 1425px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.apadrinhados {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    left: 330px;
+    top: 100px;
+}
+
+.ongs {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 1105px;
+    top: 100px;
+}
+
+/*texts*/
+.text h1 {
+    position: fixed;
+    left: 130px;
+    top: 35px;
+
+    font-family: 'bangers';
+    font-size: 30px;
+    font-style: bold;
+    color: #E894E4;
+    text-shadow: 2px 2px 2px black;
+    opacity: 10;
+}
+
+.text h2 {
+    position: fixed;
+    left: 1200px;
+    top: 28px;
+    margin-top: 5px;
+
+    font-family: 'Pathway Gothic One';
+    font-size: 30px;
+    font-style: bold;
+    color: black;
+}
+
+.text h5 {
+    position: fixed;
+    left: 685px;
+    top: 700px;
+
+    font-family: 'open sans';
+    font-size: 10px;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #E894E4;
+}
+
+.container {
+    margin-top: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    width: 1530px;
+    height: 500px;
+
+    display: flex;
+    
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 20px;
+    color: black;
+    position: flex;
+}
+
+.container .box {
+    margin-right: 10px;
+    width: 760px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box .column {
+    position: absolute;
+    top: 185px;
+    overflow: auto;
+    overflow-x: hidden;
+    margin-top: 35px;
+    width: 760px;
+    display: list-item;
+    background: rgba(253, 255, 151, 0.3);
+}
+
+.box h4 {
+    margin: 30px;
+    margin-left: -10px;
+    position: relative;
+    font-family: 'Pathway Gothic One';
+    font-size: 25px;
+    color: black;
+    opacity: 10;
+
+}
+
+::-webkit-scrollbar {
+    background: #D6FCDA;
+}
+
+::-webkit-scrollbar-button {
+    background: #D9ECFD;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E8AFE5;
+}
+
+.column-container {
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 450px;
+    height: 200px;
+    border-radius: 15px;
+    
+    display: flex;
+    background:  rgba(214, 244, 252, 0.6);
+}
+
+.profile-pic {
+    margin-top: 10px;
+    margin-left: 0px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.info {
+    margin-top: 5px;
+    margin-left: 40px;
+    text-align: left;
+    font-family: 'pathway gothic one', sans-serif;
+    color: black;
+    position: flex;
+}
+
+.info h1 {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.info h2 {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.info h3 {
+    padding-top: 5px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ongs-button {
+    margin-top: -19px;
+    margin-left: -39px;
+    width: 529px;
+    height: 238px;
+    border-radius: 15px;
+    
+    display: flex;
+    background: transparent;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.ongs-button:hover {
+    background: rgba(214, 252, 218, 1.0);
+}
+
+.ongs-button .profile-pic {
+    margin-top: 29px;
+    margin-left: 32px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.ongs-button .info {
+    margin-top: 21px;
+    margin-left: 40px;
+    text-align: left;
+    font-family: 'pathway gothic one', sans-serif;
+    color: black;
+    position: flex;
+}
+
+.ongs-button .info h1 {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.ongs-button .info h2 {
+    padding-top: 3px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.ongs-button .info h3 {
+    padding-top: 3px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    font-size: 20px;
+    line-height: 1.0;
+}
+
+.ong-info {
+    width: 1550px;
+    height: 100px;
+    position: fixed;
+    top: 90px;
+    margin-left: 260px;
+
+    font-family: 'pathway gothic one', sans-serif;
+    color: black;
+}
+
+.ong-info h1 {
+    margin-top: -75px;
+    margin-left: 130px;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.ong-info h2 {
+    margin-left: 130px;
+    font-size: 20px;
+}
+
+.container-pets {
+    overflow: auto;
+    overflow-x: hidden;
+    margin-top: 215px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    width: 1525px;
+    height: 450px;
+    
+    display: list-item;
+    
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 20px;
+    color: black;
+    position: flex;
+
+    background: rgba(214, 244, 252, 0.4);
+}
+
+.container-pets .pets-info {
+    margin-top: 20px;
+    margin-left: 300px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 600px;
+    height: 210px;
+    border-radius: 15px;
+    
+    display: flex;
+    background: rgba(253, 255, 151, 0.5);
+}
+
+.sponsor-button {
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: flex;
+    
+    background: rgba(232, 175, 299, 0.6);
+    box-shadow: 2px 2px 2px black;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sponsor-button:hover {
+    background: #D6FCDA;
+}
+
+.sponsor {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-right: 25px;
+    margin-left: 84px;
+    position: flex;
+}
+
+.sponsor-button p {
+    margin-top: -25px;
+    margin-left: -35px;
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.container-confirm {
+    width: 300px;
+    height: 250px;
+    margin-top: -250px;
+    margin-left: 1100px;
+    background: transparent;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-confirm form input {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 43px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    border-radius: 15px;
+
+    border: none;
+    outline: none;
+
+    background: rgba(0, 0, 0, 0.05);
+
+    font-family: 'pathway gothic one', sans-serif;
+    font-size: 20px;
+}
+
+form input:focus {
+    box-shadow: 0 0 3pt 2pt #E894E4;
+}
+
+#confirm-sponsor {
+    display: fixed;
+}
+
+.container-confirm input[type=submit] {
+    margin-top: 45px;
+    margin-left: 83px;
+    width: 140px;
+    padding: 5px;
+
+    background: #E8AFE5;
+    color: black;
+    display: inline;
+    box-shadow: 2px 2px 2px black;
+    
+    text-decoration: none;
+
+    border: none;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.container-confirm input[type=submit]:hover {
+    background: #FFEDBF;
+}

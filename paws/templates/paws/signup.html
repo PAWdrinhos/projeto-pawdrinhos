@@ -1,0 +1,98 @@
+{%extends 'default.html'%}
+{%load static%}
+{%block title%}Pawdrinhos - Cadastro{%endblock%}
+
+{%block content%}
+        <!--background-->
+        <div class="toystory"></div>
+
+        <!--page's logo-->
+        <a href="/"><img class="logo" src="{% static '/img/paw-print.png' %}" title="pawdrinhos"></a>
+
+        <!--big box where the content goes-->
+        <form method="POST" action="/signup/" class="box-signup">
+            
+            <p class="toptext">JUNTE-SE A NÓS!</p>
+            <img class="bunny" src="{% static '/img/easter-bunny.png'%}" title="bunny">
+
+            <!--dimensions for the columns content-->
+            <div class="signup">
+                {% csrf_token %}
+                <!--column 1-->
+                <div class="signup-column">
+                    <div class="space-names">
+                        <p>Nome</p>
+                        <p>Documento</p>
+                        <p>Estado</p>
+                        <p>Cidade</p>
+                    </div>
+
+                    <div class="space">
+                            {{form.name}}
+                            {{form.name.errors}}
+                            {{form.documento}}
+                            {{form.documento.errors}}
+                            {{form.state}}
+                            {{form.state.errors}}
+                            {{form.city}}
+                            {{form.city.errors}}
+                    </div>
+                </div>
+            
+                <!--column 2-->
+                <div class="signup-column">
+                    <div class="space-names">
+                        <p>CEP</p>
+                        <p>E-mail</p>
+                        <p>Senha</p>
+                        <p>Confirmar Senha</p>
+                    </div>
+
+                    <div class="space">
+                        {{form.cep}}
+                        {{form.cep.errors}}
+                        {{form.email}}
+                        {{form.email.errors}}
+                        {{form.password}}
+                        {{form.password.errors}}
+                        {{form.pword2}}
+                        {{form.pword2.errors}}
+                    </div>
+                </div> 
+            </div>
+
+            <!--dimensions for the content at the bottom of the big box -->
+            <div class="typeofacc">
+
+                <p>Tipo de Conta: </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <!--check's options-->
+                <div class="opt">
+                    {% for radio in form.tipo%}
+                    <label class="container"><p class="choices_label">
+
+                            {% if radio.id_for_label == 'id_tipo_0' %}
+                                ONG
+                            {% else %}
+                                Padrinho
+                            {%endif%}
+
+                    </p>
+                        {{radio.tag}}
+                        <span class="checkmark"></span>
+                    </label>
+                    {%endfor%}
+
+                   <!-- <label class="container"><p class="padrinhos">Padrinho</p>
+                        <span class="checkmark"></span>
+                    </label>-->
+                    
+                </div>
+
+                <!--sign up button (inside a div to set a postion)-->
+                <div class="button-position">
+                        <input type="submit" class="button" value="CADASTRAR-SE">
+                </div>
+            </div>
+        </form>
+        {%endblock%}
